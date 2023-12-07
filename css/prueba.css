@@ -1,0 +1,36 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+section{
+    background-color: rgb(1, 76, 1);
+    border-radius: 10px;
+    height: 330px;
+    box-shadow: 0 0 20px rgb(135, 0, 133);
+}
+#cuadricula{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+}
+.btn{
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 7px;
+}
+#div_pantalla{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: gray;
+}
+.btn:hover::before{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    content: "X";
+}
+
